@@ -1,0 +1,26 @@
+pipeline {
+    agent any 
+    stages {
+        stage('pull') { 
+            steps {
+            git credentialsId: '97', url: 'https://github.com/omeshmande/kamlesh.git'
+                 
+            }
+        }
+         stage('Build') { 
+            steps {
+                
+            }
+            }
+        stage('Test') { 
+            steps {
+                
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                
+            }
+        }
+    }
+}
